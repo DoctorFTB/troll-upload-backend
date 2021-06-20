@@ -1,7 +1,7 @@
 {
   "path": "files",
   "port": 3000,
-  "file_length": 21,
+  "file_length": 10,
   "key": "yes",
   "passwrd": "passwrd"
 }
