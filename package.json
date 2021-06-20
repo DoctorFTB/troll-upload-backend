@@ -1,0 +1,21 @@
+{
+  "name": "troll-upload-backend",
+  "version": "1.0.0",
+  "description": "Backend server for troll upload (flameshot tool)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "onchange -i -k index.js -- npm run start"
+  },
+  "author": "FTB_lag",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.2",
+    "fs-extra": "^10.0.0",
+    "nanoid": "^3.1.23",
+    "polka": "^0.5.2"
+  },
+  "devDependencies": {
+    "onchange": "^7.1.0"
+  }
+}
