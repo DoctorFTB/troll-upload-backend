@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start:dev": "onchange -i -k index.js -- npm run start"
+    "start:dev": "onchange -i -k index.js -- npm run start",
+    "start:daemon": "forever start -o out.log index.js",
+    "restart:daemon": "forever restart -o out.log index.js",
+    "stop:daemon": "forever stop index.js",
+    "list:daemon": "forever list"
   },
   "author": "FTB_lag",
   "license": "MIT",
   "dependencies": {
     "config": "^3.3.2",
+    "forever": "^4.0.1",
     "fs-extra": "^10.0.0",
     "nanoid": "^3.1.23",
     "polka": "^0.5.2"
